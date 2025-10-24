@@ -1,0 +1,71 @@
+[build-system]
+requires = ["hatchling>=1.27.0", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[project]
+name = "knowing"
+description = "Logic framework built for fun"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = []
+dynamic = ["version"]
+
+[dependency-groups]
+
+[tool.hatch.build.targets.wheel]
+packages = ["knowing/"]
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.uv]
+required-version = "~=0.8.15"
+
+[tool.mypy]
+strict = true
+explicit_package_bases = true
+disable_error_code = ["import-untyped", "no-any-return", "no-untyped-call"]
+
+[tool.pytest.ini_options]
+pythonpath = "."
+addopts = [
+    "--import-mode=importlib",
+    "--doctest-modules",
+    "--ignore=.repl.py",
+    "--ignore=hai/interface",
+]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["ALL"]
+ignore = [
+    "ANN401",  # Dynamically typed expressions (typing.Any) are disallowed
+    "D203",    # 1 blank line required before class docstring
+    "D212",    # Multi-line docstring summary should start at the second line
+    "FIX002",  # Line contains TODO, consider resolving the issue
+    "ISC001",  # Implicitly concatenated string literals on one line
+    "C901",    # Function is too complex
+    "COM812",  # Trailing comma missing
+    "INP001",  # File is part of an implicit namespace package. Add an `__init__.py`
+    "D100",    # Missing documentation - Public module
+    "D101",    # Missing documentation - Public class
+    "D102",    # Missing documentation - Public method
+    "D103",    # Missing documentation - Public function
+    "D104",    # Missing documentation - Public package
+    "D105",    # Missing documentation - Magic method
+    "D107",    # Missing documentation - __init__
+    "S101",    # Use of `assert` detected
+    "TD003",   # Missing issue link on the line following this TODO
+    "F403",    # Wildcard imports used
+    "TC",      # Move third-party import into a type-checking block
+    "SLF001",  # Private member accessed
+    "PLR2004", # Magic value used
+    "PGH004",  # Use specific rule codes when using `ruff: noqa`
+    "PTH",     # os.path->pathlib.Path replacements
+    "PLR0913", # Too many arguments
+    "PLR0915", # Too many statements
+    "PLR0912", # Too many branches
+    "FBT003",  # Boolean positional value in function call
+]
