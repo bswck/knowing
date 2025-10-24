@@ -6,5 +6,6 @@ Nothing here. I'll be building this thing in my free time, diving into [model th
 The main goal is ~~not to learn Datalog or Prolog~~ being able to build any new knowledge+logic framework using Python code.
 I'd do that for many purposes:
 - Examining the implications of my interpretations of facts
+- Having a funnel to gather and validate my knowledge in different areas
 - Writing [codegens that don't suck](https://github.com/bswck/generate-errno-stub) to test new software
 - Writing specifications
