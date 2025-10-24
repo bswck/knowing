@@ -1,21 +1,30 @@
 # knowing
-Logic framework built for fun
+*A logic framework built for fun.*
 
-Nothing here. I'll be building this thing in my free time, diving into [set theory](https://en.wikipedia.org/wiki/Set_theory), [relational algebra](https://en.wikipedia.org/wiki/Relational_algebra), [category theory](https://en.wikipedia.org/wiki/Category_theory), [type theory](https://en.wikipedia.org/wiki/Type_theory), [model theory](https://en.wikipedia.org/wiki/Model_theory), [formal semantics](https://en.wikipedia.org/wiki/Formal_semantics_(natural_language)), [abstract interpretation](https://en.wikipedia.org/wiki/Abstract_interpretation), [symbolic execution](https://en.wikipedia.org/wiki/Symbolic_execution) and [lambda calculus](https://en.wikipedia.org/wiki/Lambda_calculus), hoping to find something interesting that connects all the dots together.
+At the moment, there’s nothing here — this is a playground I’ll be building in my free time. I plan to dive into [set theory](https://en.wikipedia.org/wiki/Set_theory), [relational algebra](https://en.wikipedia.org/wiki/Relational_algebra), [category theory](https://en.wikipedia.org/wiki/Category_theory), [type theory](https://en.wikipedia.org/wiki/Type_theory), [model theory](https://en.wikipedia.org/wiki/Model_theory), [formal semantics](https://en.wikipedia.org/wiki/Formal_semantics_(natural_language)), [abstract interpretation](https://en.wikipedia.org/wiki/Abstract_interpretation), [symbolic execution](https://en.wikipedia.org/wiki/Symbolic_execution), and [lambda calculus](https://en.wikipedia.org/wiki/Lambda_calculus) — searching for a way to connect the dots between them.
 
-The main goal is ~~not to learn Datalog or Prolog~~ being able to build any new knowledge+logic framework using Python code.
-I'd do that for many purposes:
-- Examining the implications of my interpretations of facts
-- Having a funnel to gather and validate my knowledge in different areas
-- Writing [codegens that don't suck](https://github.com/bswck/generate-errno-stub) to test new software
-- Writing specifications
+The goal is to **build new knowledge and logic frameworks directly in Python**.
+I want to do this for several reasons:
+- To analyze the implications of my own interpretations of facts  
+- To create a structured way to gather and validate what I learn  
+- To write [code generators that don’t suck](https://github.com/bswck/generate-errno-stub) as part of testing new software ideas  
+- To help write better, clearer specifications  
 
-When humans learn, they are essentially building a graph. That graph often needs to express relations between sets, unknown concepts or known facts.
+When humans learn, they build *graphs* — structures of knowledge that express relations between sets, unknown ideas, and established facts.  
+What frustrates me is the *ambiguity* that clouds these graphs. Ambiguity (or [incompleteness](https://en.wikipedia.org/wiki/G%C3%B6del%27s_incompleteness_theorems#Formal_systems:_completeness,_consistency,_and_effective_axiomatization)) in academic material has real consequences — it makes reasoning and problem-solving unnecessarily hard.
 
-What frustrates me deeply is the ambiguity that tampers that graph. The ambiguity or [incompleteness](https://en.wikipedia.org/wiki/G%C3%B6del%27s_incompleteness_theorems#Formal_systems:_completeness,_consistency,_and_effective_axiomatization) in academic books have real consequences. At least to me, they make it very difficult to solve tests.
+I constantly generate questions as I learn new things, often for reasons I can’t fully articulate. I’d like to create a formal-like system that can verify those questions, simplify them, and help me pinpoint where ambiguity exists in the knowledge I’m absorbing.
 
-I often have tons of questions about new knowledge, but they come from very different reasons that I often find only subconscious. I'd like to have any formal-like system that can verify them, simplify some, and point me to what the ambiguities are in the new things that I learn about the world.
+Ultimately, I believe the future lies in **reasoning that you can actually follow**.  
+Back in high school, I dreamed of building a math solver for problems at the *matura* level. Those tasks often boiled down to:  
+- starting from a set of known facts,  
+- traversing a knowledge graph,  
+- finding a path to a solution,  
+- and presenting both the result and the reasoning behind it.  
 
-Moreover, I think that future lies in reasoning that you can actually follow. Back in high school, I wanted to build a solver for math tasks at the level of the matura exam. They really often just boil down to having a set of facts, being asked to traverse a knowledge graph to find a path to solution and deliver that path along with a solution. There are often lots of ways to come to a solution, and I'm not yet sure what algorithms humans use to get them. Is it more like BFS, more like DFS, more like Dijkstra, more like A*? There were tasks that could be solved in 10 different ways, and what I found fascinating is that half of them was essentially the same way but just differently framed. To illustrate, there was a task that can be solved by Stewart's Theorem or by applying the law of cosines twice. Stewart's Theorem is essentially the law of cosines twice! These solutions are *functionally* identical, but the way we framed the steps are different. This often matters in software, where you constantly hit the problem of laying out things in a way that isn't too fine-grained but also not too coarse-grained. What I want to capture is what is being framed, so that it can come up with all the different ways to frame things. I want to program an inductive system.
+There are usually several ways to reach the same conclusion. What fascinates me is that many of these paths are *fundamentally the same*, just expressed differently. For example, a geometry problem might be solved using Stewart’s Theorem or by applying the law of cosines twice — which, in essence, are equivalent. What changes is only the *framing*.
 
-I want an orchestrator for functional and imperative methods. I want Church methods and Turing methods as a Service.
+This is an issue that mirrors software design: deciding how fine-grained or coarse-grained your abstractions should be. Framing matters. I want to capture *how* something is framed, so a system could explore multiple valid framings and surface their equivalence. In other words, I want to build an **inductive system** — one that can reason about reasoning.
+
+My endgame is to design an **orchestrator** that bridges functional and imperative approaches.  
+I'll call it a *thinking system*.
