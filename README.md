@@ -14,4 +14,4 @@ When humans learn, they are essentially building a graph. That graph often needs
 
 What frustrates me deeply is the ambiguity that tampers that graph. The ambiguity or [incompleteness](https://en.wikipedia.org/wiki/G%C3%B6del%27s_incompleteness_theorems#Formal_systems:_completeness,_consistency,_and_effective_axiomatization) in academic books have real consequences. At least to me, they make it very difficult to solve tests.
 
-I often have tons of questions about new knowledge, but they come from very different reasons that I often only subconscious. I'd like to have any formal-like system that can verify them, simplify some, and point me to what the ambiguities are in the new things that I learn about the world.
+I often have tons of questions about new knowledge, but they come from very different reasons that I often find only subconscious. I'd like to have any formal-like system that can verify them, simplify some, and point me to what the ambiguities are in the new things that I learn about the world.
