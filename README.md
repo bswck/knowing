@@ -15,7 +15,7 @@ What frustrates me is the *ambiguity* that clouds these graphs. Ambiguity (or [i
 
 I constantly generate questions as I learn new things, often for reasons I can’t fully articulate. I’d like to create a formal-like system that can verify those questions, simplify them, and help me pinpoint where ambiguity exists in the knowledge I’m absorbing.
 
-Ultimately, I believe the future lies in **reasoning that you can actually follow**.  
+Ultimately, I believe the future lies in reasoning that you can actually follow.  
 Back in high school, I dreamed of building a math solver for problems at the *matura* level. Those tasks often boiled down to:  
 - starting from a set of known facts,  
 - traversing a knowledge graph,  
@@ -24,7 +24,6 @@ Back in high school, I dreamed of building a math solver for problems at the *ma
 
 There are usually several ways to reach the same conclusion. What fascinates me is that many of these paths are *fundamentally the same*, just expressed differently. For example, a geometry problem might be solved using Stewart’s Theorem or by applying the law of cosines twice — which, in essence, are equivalent. What changes is only the *framing*.
 
-This is an issue that mirrors software design: deciding how fine-grained or coarse-grained your abstractions should be. Framing matters. I want to capture *how* something is framed, so a system could explore multiple valid framings and surface their equivalence. In other words, I want to build an **inductive system** — one that can reason about reasoning.
+This is an issue that mirrors software design: deciding how fine-grained or coarse-grained your abstractions should be. Framing matters. I want to capture *how* something is framed, so a system could explore multiple valid framings and surface their equivalence. In other words, I want to build an inductive system — one that can reason about reasoning.
 
-My endgame is to design an **orchestrator** that bridges functional and imperative approaches.  
 I'll call it a *thinking system*.
