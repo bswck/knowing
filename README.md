@@ -27,3 +27,10 @@ There are usually several ways to reach the same conclusion. What fascinates me 
 This is an issue that mirrors software design: deciding how fine-grained or coarse-grained your abstractions should be. Framing matters. I want to capture *how* something is framed, so a system could explore multiple valid framings and surface their equivalence. In other words, I want to build an inductive system — one that can reason about reasoning.
 
 I'll call it a *thinking system*.
+
+## Roadmap
+
+### Research
+
+- [ ] https://rbcborealis.com/research-blogs/tutorial-9-sat-solvers-i-introduction-and-applications/
+- [ ] https://www.cole-k.com/2023/07/24/e-graphs-primer/ (Thanks for suggesting an e-graph [Kamila](https://github.com/iczelia)!)
