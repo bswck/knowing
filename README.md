@@ -32,5 +32,5 @@ I'll call it a *thinking system*.
 
 ### Research
 
-- [ ] https://rbcborealis.com/research-blogs/tutorial-9-sat-solvers-i-introduction-and-applications/
 - [ ] https://www.cole-k.com/2023/07/24/e-graphs-primer/ (Thanks for suggesting an e-graph [Kamila](https://github.com/iczelia)!)
+- [ ] https://arxiv.org/pdf/1012.1802 A paper on equality saturation
