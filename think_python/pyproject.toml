@@ -3,7 +3,7 @@ requires = ["hatchling>=1.27.0", "hatch-vcs"]
 build-backend = "hatchling.build"
 
 [project]
-name = "knowing"
+name = "think"
 description = "Logic framework built for fun"
 readme = "README.md"
 requires-python = ">=3.13"
@@ -13,7 +13,7 @@ dynamic = ["version"]
 [dependency-groups]
 
 [tool.hatch.build.targets.wheel]
-packages = ["knowing/"]
+packages = ["think/"]
 
 [tool.hatch.version]
 source = "vcs"
