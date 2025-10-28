@@ -1,4 +1,4 @@
-# knowing
+# think
 *A logic framework built for fun.*
 
 At the moment, there’s nothing here — this is a playground I’ll be building in my free time. I plan to dive into [set theory](https://en.wikipedia.org/wiki/Set_theory), [relational algebra](https://en.wikipedia.org/wiki/Relational_algebra), [category theory](https://en.wikipedia.org/wiki/Category_theory), [type theory](https://en.wikipedia.org/wiki/Type_theory), [model theory](https://en.wikipedia.org/wiki/Model_theory), [formal semantics](https://en.wikipedia.org/wiki/Formal_semantics_(natural_language)), [abstract interpretation](https://en.wikipedia.org/wiki/Abstract_interpretation), [symbolic execution](https://en.wikipedia.org/wiki/Symbolic_execution), and [lambda calculus](https://en.wikipedia.org/wiki/Lambda_calculus) — searching for a way to connect the dots between them.
